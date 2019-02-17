@@ -9,7 +9,7 @@ const app = express()
 const port = 7000
 
 // app.use(session({
-//     store,
+//     store, 
 //     secret: 'sUpErS3cR3t',
 //     resave: false,
 //     saveUninitialized: false,
@@ -20,4 +20,4 @@ app.use(postgraphile(process.env.DATABASE_URL || 'postgres:///', 'public', {
     graphiql: true,
 }))
 
-app.listen(port, () => console.log(`task-attack-back listening on port ${port}`)) 
+app.listen(port, () => console.log(`pgql-test listening on port ${port}`)) 
